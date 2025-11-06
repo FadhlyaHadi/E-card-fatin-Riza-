@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Invite Wedding</title>
+  <link rel="stylesheet" href="wedding.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="slides">
+
+<!-- Cover -->
+  <section class="slide cover active">
+  <img src="card.png" alt="Kad Kahwin" class="card-img">
+  </section>
+
+    <!-- Countdown -->
+    <section class="slide countdown">
+      <h2>Menuju Hari Bahagia</h2>
+      <div id="timer">
+        <div><span id="days"></span><br>Hari</div>
+        <div><span id="hours"></span><br>Jam</div>
+        <div><span id="minutes"></span><br>Minit</div>
+        <div><span id="seconds"></span><br>Saat</div>
+      </div>
+    </section>
+
+    <!-- Ucapan -->
+    <section class="slide cover active">
+  <img src="page2.png" alt="page2" class="page2-img">
+  </section>
+
+    <!-- Lokasi -->
+    <section class="slide lokasi">
+      <h2>Lokasi Majlis</h2>
+	  <img src="home.png" alt="maps" class="canva-cover">
+      <a href="https://maps.app.goo.gl/H689iTsB5EaPhp868" target="_blank" class="map-btn">📍 Buka Lokasi di Google Maps </a>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="slide footer">
+      <p>“Ya Allah, satukanlah hati kedua mempelai ini sebagaimana Engkau satukan hati Adam dan Hawa, Yusuf dan Zulaikha, serta Muhammad SAW dan Khadijah.”</p>
+      <p>Ikhlas dari kami sekeluarga 💕</p>
+    </section>
+
+  </div>
+
+  <!-- Countdown Script -->
+  <script>
+    const weddingDate = new Date("Dec 22, 2025 11:00:00").getTime();
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Majlis sedang berlangsung 🎉";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tangerine:wght@400;700&display=swap');
+
+:root {
+  --bg-cream: #fdfaf6;
+  --accent: #fbc1cf;
+  --brown: #7b5e57;
+  --text: #444;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =================== ASAS =================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: var(--bg-cream);
+  color: var(--text);
+}
+
+.slides {
+  width: 100%;
+}
+
+/* =================== SLIDE UMUM =================== */
+.slide {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* =================== COVER =================== */
+.cover {
+  position: relative;
+  background: var(--bg-cream);
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =================== COUNTDOWN =================== */
+.countdown h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.8rem;
+  color: var(--brown);
+}
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+#timer div {
+  background: white;
+  border: 2px solid var(--accent);
+  color: var(--brown);
+  padding: 16px 20px;
+  border-radius: 16px;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+#timer div:hover {
+  transform: scale(1.03);
+}
+#timer span {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Tangerine", cursive;
+  color: var(--accent);
+}
+
+/* =================== UCAPAN =================== */
+.ucapan {
+  background: var(--bg-cream);
+  color: var(--text);
+}
+.ucapan h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.ucapan p {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =================== LOKASI =================== */
+.lokasi {
+  background: #fffdf8;
+}
+.lokasi h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+}
+.canva-cover {
+  max-width: 100
+  /* =================== PAGE 2 (UCAPAN GAMBAR) =================== */
+.page2 {
+  background: var(--bg-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+}
+.page2-img {
+  width: 95%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  object-fit: contain;
+}
+
+/* Sesuaikan untuk telefon */
+@media (max-width: 768px) {
+  .page2 {
+    padding: 20px 5px;
+  }
+  .page2-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
