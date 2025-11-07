@@ -107,32 +107,35 @@ body, html {
 }
 .canva-cover {
   max-width: 100
-  /* =================== PAGE 2 (UCAPAN GAMBAR) =================== */
+/* =================== PAGE 2 (UCAPAN GAMBAR) =================== */
 .page2 {
   background: var(--bg-cream);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 10px;
+  padding: 40px 20px;
 }
-}
+
 .page2-img {
-  width: 95%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 550px;
   height: auto;
   border-radius: 14px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   object-fit: contain;
 }
 
-/* Sesuaikan untuk telefon */
+/* =================== RESPONSIVE (untuk telefon) =================== */
 @media (max-width: 768px) {
   .page2 {
-    padding: 20px 5px;
+    flex-direction: column;
+    padding: 25px 10px;
   }
+
   .page2-img {
     width: 100%;
-    border-radius: 10px;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   }
 }
-
