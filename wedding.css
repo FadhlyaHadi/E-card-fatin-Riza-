@@ -33,15 +33,9 @@ body, html {
   gap: 25px;
 }
 
-/* =================== FULLSCREEN UNTUK COVER & COUNTDOWN =================== */
-.cover,
-.countdown {
-  min-height: 100vh;
-}
-
 /* =================== COVER =================== */
 .cover {
-  position: relative;
+  min-height: 100vh;
 }
 
 .card-img {
@@ -53,10 +47,10 @@ body, html {
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* =================== BUTANG MUZIK BAWAH KAD =================== */
+/* =================== BUTTON MUZIK =================== */
 #music-btn {
-  display: block;       /* supaya margin auto berfungsi */
-  margin: 20px auto 0;  /* jarak atas 20px, auto kiri-kanan = tengah */
+  display: block;
+  margin: 20px auto 0;
   background: var(--accent);
   color: white;
   border: none;
@@ -75,6 +69,10 @@ body, html {
 }
 
 /* =================== COUNTDOWN =================== */
+.countdown {
+  min-height: 100vh;
+}
+
 .countdown h2 {
   font-family: "Tangerine", cursive;
   font-size: 2.8rem;
@@ -115,11 +113,7 @@ body, html {
 
 /* =================== PAGE 2 =================== */
 .page2 {
-  background: var(--bg-cream);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .page2-img {
@@ -134,33 +128,31 @@ body, html {
 /* =================== LOKASI =================== */
 .lokasi {
   background: #fffdf8;
-  justify-content: flex-start;
-  padding: 40px 20px 40px 20px; /* atas 40px, bawah 40px = selaras */
+  padding: 60px 20px 50px 20px; /* atas 60px, bawah 50px */
+  margin-top: 30px; /* jarak dari Page2 */
 }
 
 .lokasi h2 {
   font-family: "Tangerine", cursive;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .canva-cover {
   max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 25px; /* jarak bawah gambar untuk selaras dengan padding bawah */
+  margin-bottom: 25px; /* jarak bawah gambar ke button/link */
 }
 
 /* =================== FOOTER =================== */
 .footer {
   background: var(--bg-cream);
-  justify-content: flex-start;
-  padding: 40px 20px 40px 20px; /* padding atas & bawah sama */
+  padding: 60px 20px; /* jarak atas & bawah selesa */
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--brown);
 }
-
 
 /* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
@@ -181,8 +173,7 @@ body, html {
   }
 
   .page2 {
-    flex-direction: column;
-    padding: 30px 10px;
+    padding: 40px 10px;
   }
 
   .page2-img {
@@ -190,8 +181,16 @@ body, html {
     max-width: 400px;
   }
 
+  .lokasi {
+    padding: 50px 15px 40px 15px;
+    margin-top: 20px;
+  }
+
   .lokasi h2 {
     font-size: 2.2rem;
   }
-}
 
+  .footer {
+    padding: 50px 15px;
+  }
+}
