@@ -24,13 +24,13 @@ body, html {
 
 /* =================== SLIDE UMUM =================== */
 .slide {
-  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 25px;
+  padding: 60px 20px;
 }
 
 /* =================== COVER =================== */
@@ -114,6 +114,7 @@ body, html {
 /* =================== PAGE 2 =================== */
 .page2 {
   padding: 60px 20px;
+  min-height: 80vh;
 }
 
 .page2-img {
@@ -128,8 +129,9 @@ body, html {
 /* =================== LOKASI =================== */
 .lokasi {
   background: #fffdf8;
-  padding: 60px 20px 50px 20px; /* padding atas & bawah */
-  margin-top: 50px; /* jarak dari Page2 */
+  padding: 60px 20px;
+  margin-top: 60px; /* Jarak dari Page2 */
+  min-height: 80vh;
 }
 
 .lokasi h2 {
@@ -142,34 +144,17 @@ body, html {
   max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 40px; /* jarak dari button/link ke bawah */
+  margin-bottom: 40px; /* Jarak ke button/link */
 }
 
 /* =================== FOOTER =================== */
 .footer {
   background: var(--bg-cream);
   padding: 60px 20px;
-  margin-top: 40px; /* jarak dari Lokasi ke footer */
+  margin-top: 60px; /* Jarak dari Lokasi */
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--brown);
-}
-
-/* =================== RESPONSIVE =================== */
-@media (max-width: 768px) {
-  .lokasi {
-    padding: 50px 15px 40px 15px;
-    margin-top: 30px;
-  }
-
-  .canva-cover {
-    margin-bottom: 30px;
-  }
-
-  .footer {
-    padding: 50px 15px;
-    margin-top: 30px;
-  }
 }
 
 /* =================== RESPONSIVE =================== */
@@ -200,16 +185,16 @@ body, html {
   }
 
   .lokasi {
-    padding: 50px 15px 40px 15px;
-    margin-top: 20px;
+    padding: 50px 15px;
+    margin-top: 40px;
   }
 
-  .lokasi h2 {
-    font-size: 2.2rem;
+  .canva-cover {
+    margin-bottom: 30px;
   }
 
   .footer {
     padding: 50px 15px;
+    margin-top: 40px;
   }
 }
-
