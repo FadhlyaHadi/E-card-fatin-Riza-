@@ -55,7 +55,8 @@ body, html {
 
 /* =================== BUTANG MUZIK BAWAH KAD =================== */
 #music-btn {
-  margin-top: 20px; /* jarak dari kad */
+  display: block;       /* supaya margin auto berfungsi */
+  margin: 20px auto 0;  /* jarak atas 20px, auto kiri-kanan = tengah */
   background: var(--accent);
   color: white;
   border: none;
@@ -133,7 +134,6 @@ body, html {
 /* =================== LOKASI =================== */
 .lokasi {
   background: #fffdf8;
-  min-height: auto; /* ikut isi sebenar */
   justify-content: flex-start;
   padding: 40px 20px;
 }
@@ -154,7 +154,6 @@ body, html {
 /* =================== FOOTER =================== */
 .footer {
   background: var(--bg-cream);
-  min-height: auto;
   justify-content: flex-start;
   padding: 30px 20px;
   font-size: 0.95rem;
