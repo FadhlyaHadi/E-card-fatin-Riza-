@@ -16,7 +16,7 @@
     <!-- Cover -->
     <section class="slide cover active">
       <img src="card.png" alt="Kad Kahwin" class="card-img">
-      <!-- 🎵 Butang Muzik di bawah kad -->
+      <!-- 🎵 Butang Muzik -->
       <button id="music-btn">🎶 Play Music</button>
       <audio id="bg-music" loop>
         <source src="song.mp3" type="audio/mpeg">
@@ -54,8 +54,9 @@
 
   </div>
 
-  <!-- Countdown Script & Music Control -->
+  <!-- Countdown + Music Script -->
   <script>
+    // Countdown
     const weddingDate = new Date("Dec 22, 2025 11:00:00").getTime();
     const x = setInterval(function() {
       const now = new Date().getTime();
@@ -77,7 +78,7 @@
       }
     }, 1000);
 
-    // 🎶 Kawalan Muzik
+    // Music Control
     const music = document.getElementById("bg-music");
     const btn = document.getElementById("music-btn");
     let isPlaying = false;
