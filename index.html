@@ -13,10 +13,10 @@
 
   <div class="slides">
 
-<!-- Cover -->
-  <section class="slide cover active">
-  <img src="card.png" alt="Kad Kahwin" class="card-img">
-  </section>
+    <!-- Cover -->
+    <section class="slide cover active">
+      <img src="card.png" alt="Kad Kahwin" class="card-img">
+    </section>
 
     <!-- Countdown -->
     <section class="slide countdown">
@@ -26,25 +26,26 @@
         <div><span id="hours"></span><br>Jam</div>
         <div><span id="minutes"></span><br>Minit</div>
         <div><span id="seconds"></span><br>Saat</div>
-		<audio controls autoplay loop>
-  <source src="song.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
       </div>
+
+      <!-- 🎵 Butang Muzik -->
+      <button id="music-btn">🎶 Play Music</button>
+      <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+      </audio>
     </section>
 
-    <!-- Ucapan -->
-    <section class="slide cover active">
-  <img src="Page2.png" alt="Page2" class="Page2-img">
-  </section>
+    <!-- Ucapan (Page 2) -->
+    <section class="slide page2">
+      <img src="Page2.png" alt="Page2" class="page2-img">
+    </section>
 
     <!-- Lokasi -->
     <section class="slide lokasi">
       <h2>Lokasi Majlis</h2>
-	  <img src="home.png" alt="maps" class="canva-cover">
+      <img src="home.png" alt="maps" class="canva-cover">
       <a href="https://maps.app.goo.gl/H689iTsB5EaPhp868" target="_blank" class="map-btn">📍 Buka Lokasi di Google Maps </a>
     </section>
-
 
     <!-- Footer -->
     <section class="slide footer">
@@ -76,10 +77,24 @@
         document.getElementById("timer").innerHTML = "Majlis sedang berlangsung 🎉";
       }
     }, 1000);
+
+    // 🎶 Kawalan Muzik
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (!isPlaying) {
+        music.play();
+        btn.textContent = "⏸ Pause Music";
+        isPlaying = true;
+      } else {
+        music.pause();
+        btn.textContent = "🎶 Play Music";
+        isPlaying = false;
+      }
+    });
   </script>
 
 </body>
 </html>
-
-
-
