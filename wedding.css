@@ -71,7 +71,7 @@ body, html {
 /* =================== COUNTDOWN =================== */
 .countdown {
   min-height: 100vh;
-  padding-top: 20px; /* dekatkan ke card */
+  padding-top: 10px; /* dekatkan ke card */
 }
 
 .countdown h2 {
@@ -203,3 +203,4 @@ body, html {
     padding-top: 10px; /* dekatkan ke card di phone */
   }
 }
+
