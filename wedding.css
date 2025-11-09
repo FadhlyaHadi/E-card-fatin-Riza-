@@ -128,8 +128,8 @@ body, html {
 /* =================== LOKASI =================== */
 .lokasi {
   background: #fffdf8;
-  padding: 60px 20px 50px 20px; /* atas 60px, bawah 50px */
-  margin-top: 30px; /* jarak dari Page2 */
+  padding: 60px 20px 50px 20px; /* padding atas & bawah */
+  margin-top: 50px; /* jarak dari Page2 */
 }
 
 .lokasi h2 {
@@ -142,16 +142,34 @@ body, html {
   max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 25px; /* jarak bawah gambar ke button/link */
+  margin-bottom: 40px; /* jarak dari button/link ke bawah */
 }
 
 /* =================== FOOTER =================== */
 .footer {
   background: var(--bg-cream);
-  padding: 60px 20px; /* jarak atas & bawah selesa */
+  padding: 60px 20px;
+  margin-top: 40px; /* jarak dari Lokasi ke footer */
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--brown);
+}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+  .lokasi {
+    padding: 50px 15px 40px 15px;
+    margin-top: 30px;
+  }
+
+  .canva-cover {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 50px 15px;
+    margin-top: 30px;
+  }
 }
 
 /* =================== RESPONSIVE =================== */
@@ -194,3 +212,4 @@ body, html {
     padding: 50px 15px;
   }
 }
+
