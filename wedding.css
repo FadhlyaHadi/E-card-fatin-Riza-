@@ -136,6 +136,26 @@ body, html {
   object-fit: contain;
 }
 
+/* =================== BUTANG MUZIK =================== */
+#music-btn {
+  margin-top: 25px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(251, 193, 207, 0.5);
+  transition: all 0.3s ease;
+}
+
+#music-btn:hover {
+  background: #ff9cb7;
+  transform: scale(1.05);
+}
+
 /* =================== RESPONSIVE (untuk telefon) =================== */
 @media (max-width: 768px) {
   .page2 {
