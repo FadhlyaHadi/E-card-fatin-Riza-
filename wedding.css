@@ -135,7 +135,7 @@ body, html {
 .lokasi {
   background: #fffdf8;
   justify-content: flex-start;
-  padding: 40px 20px;
+  padding: 40px 20px 40px 20px; /* atas 40px, bawah 40px = selaras */
 }
 
 .lokasi h2 {
@@ -148,18 +148,19 @@ body, html {
   max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  margin-bottom: 15px;
+  margin-bottom: 25px; /* jarak bawah gambar untuk selaras dengan padding bawah */
 }
 
 /* =================== FOOTER =================== */
 .footer {
   background: var(--bg-cream);
   justify-content: flex-start;
-  padding: 30px 20px;
+  padding: 40px 20px 40px 20px; /* padding atas & bawah sama */
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--brown);
 }
+
 
 /* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
@@ -193,3 +194,4 @@ body, html {
     font-size: 2.2rem;
   }
 }
+
